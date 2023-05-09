@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <h2 id="calc">CALC</h2>
+      <p class="theme">THEME</p>
+      <div class="togglecard">
+        <p class="numbers">1 2 3</p>
+        <input
+          class="rangeinput"
+          type="range"
+          min="1"
+          max="3"
+          value="1"
+          id="rangeInput"
+        />
+      </div>
+    </div>
+    <div class="container2">
+      <input class="total" id="result" disabled />
+    </div>
+    <div class="container3">
+      <div class="line">
+        <button onclick="calculator('7')" class="btn">7</button>
+        <button onclick="calculator('8')" class="btn">8</button>
+        <button onclick="calculator('9')" class="btn">9</button>
+        <button onclick="deleteLast('')" class="btndel" id="btndel1">
+          DEL
+        </button>
+      </div>
+      <div class="line">
+        <button onclick="calculator('4')" class="btn">4</button>
+        <button onclick="calculator('5')" class="btn">5</button>
+        <button onclick="calculator('6')" class="btn">6</button>
+        <button onclick="calculator('+')" class="btn">+</button>
+      </div>
+      <div class="line">
+        <button onclick="calculator('1')" class="btn">1</button>
+        <button onclick="calculator('2')" class="btn">2</button>
+        <button onclick="calculator('3')" class="btn">3</button>
+        <button onclick="calculator('-')" class="btn">-</button>
+      </div>
+      <div class="line">
+        <button onclick="calculator('.')" class="btn">.</button>
+        <button onclick="calculator('0')" class="btn">0</button>
+        <button onclick="calculator('/')" class="btn">/</button>
+        <button onclick="calculator('*')" class="btn">*</button>
+      </div>
+      <div class="line">
+        <button onclick="reset()" class="reset" id="reset1">RESET</button>
+        <button onclick="calculate()" class="equals" id="equals1">=</button>
+      </div>
+    </div>
+  </body>
+</html>

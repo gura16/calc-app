@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3a4663;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 375px;
+  display: flex;
+  gap: 18px;
+  padding: 0 31px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.togglecard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.numbers {
+  letter-spacing: 6px;
+  text-align: center;
+  color: white;
+  margin-left: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: var(--thumb-background-color, #c85402);
+  border-radius: 50%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 20px;
+  background: #242d44;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  margin: 0px;
+  width: 75px;
+  margin-top: 5px;
+  padding: 0 3px 0 3px;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.theme {
+  font-family: League Spartan;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.container2 {
+  height: 88px;
+  width: 327px;
+  background-color: #181f33;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 37px;
+}
+
+.total {
+  height: 47px;
+  width: 233px;
+  margin-left: 80px;
+  margin-top: 19px;
+  background-color: #181f33;
+  font-family: "League Spartan";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.6666666865348816px;
+  border: none;
+  color: white;
+  text-align: right;
+}
+
+.container3 {
+  background-color: #242d44;
+  height: 420px;
+  width: 327px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.btn {
+  height: 64px;
+  width: 60px;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px #b3a497;
+  font-family: League Spartan;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+  color: #434a59;
+  background-color: #eae3dc;
+  border: none;
+  cursor: pointer;
+}
+
+.btndel {
+  height: 64px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #647198;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.33px;
+  text-align: center;
+  color: white;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  display: flex;
+  gap: 13px;
+}
+
+.reset {
+  height: 64px;
+  width: 133px;
+  background-color: #647198;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border: none;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: white;
+  cursor: pointer;
+}
+
+.equals {
+  height: 64px;
+  width: 133px;
+  background-color: #d03f2f;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0px -4px 0px #93261a;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 540px;
+    display: flex;
+
+    padding: 0 25px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .theme {
+    margin-left: 280px;
+  }
+  .container2 {
+    height: 128px;
+    width: 540px;
+    border-radius: 10px;
+  }
+
+  .container3 {
+    height: 480px;
+    width: 540px;
+    border-radius: 10px;
+    display: flex;
+    gap: 24px;
+  }
+
+  .line {
+    gap: 24px;
+    margin: auto;
+  }
+
+  .btn {
+    height: 64px;
+    width: 101px;
+    border-radius: 10px;
+  }
+
+  .btndel {
+    height: 64px;
+    width: 101px;
+    border-radius: 10px;
+  }
+
+  .reset {
+    height: 64px;
+    width: 227px;
+    border-radius: 10px;
+  }
+
+  .equals {
+    height: 64px;
+    width: 227px;
+    border-radius: 10px;
+  }
+
+  .total {
+    height: 108px;
+    width: 440px;
+
+    border-radius: 10px;
+  }
+}
